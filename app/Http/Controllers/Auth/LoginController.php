@@ -25,16 +25,12 @@ class LoginController extends Controller
     public function store(Request $request)
     {
 
-        
-
         $this->validate($request,[
 
             'username' => ['required'],
             'password' => ['required']
 
         ]);
-
-        // dd($request->remember);
 
         if(auth()->attempt(['username'=>$request->username,'password'=>$request->password],$request->remember)){
 

@@ -13,7 +13,7 @@
     <div class=" flex items-center justify-center mt-4">
 
 
-        <div class=" p-6 bg-slate-200 w-1/3 rounded-md flex flex-col shadow-xl justify-center">
+        <div class=" p-6 sm:w-1/2 lg:w-1/3 bg-slate-200  rounded-md flex flex-col shadow-xl justify-center">
 
             @if (session('mensaje'))
 
@@ -23,8 +23,6 @@
                         >{{session('mensaje')}}
                     </p>
                 </div>
-                
-                
                 
             @endif
 
@@ -102,8 +100,6 @@
             </div>
 
         </div>
-
-        
 
     </div>
 
